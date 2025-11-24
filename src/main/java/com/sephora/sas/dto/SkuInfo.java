@@ -2,6 +2,13 @@ package com.sephora.sas.dto;
 
 
 public class SkuInfo {
+
+	private boolean isActive;
+    private String startDate;
+    private String endDate;
+    private boolean isOnHold;
+    private String restrictedCountry;
+    
     public boolean isActive() {
 		return isActive;
 	}
@@ -32,9 +39,4 @@ public class SkuInfo {
 	public void setRestrictedCountry(String restrictedCountry) {
 		this.restrictedCountry = restrictedCountry;
 	}
-	private boolean isActive;
-    private String startDate;
-    private String endDate;
-    private boolean isOnHold;
-    private String restrictedCountry;
 }

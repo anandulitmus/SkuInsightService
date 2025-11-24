@@ -5,8 +5,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableFeignClients
-public class SkuAggregatorServiceApplication {
+public class SkuIntegrationServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SkuAggregatorServiceApplication.class, args);
+        SpringApplication.run(SkuIntegrationServiceApplication.class, args);
     }
 }
