@@ -1,10 +1,12 @@
 spring:
   application:
     name: sku-aggregator-service
+  jackson:
+    default-property-inclusion: non_null
 services:
   catalog:
     base-url: https://catalog-master-service-prod.prod.internal.sephora.com/catalog-master-service/v1
   pxs:
-    base-url: https://pxs.example.com
+    base-url: https://productgraph-prod.prod.internal.sephora.com/productgraph/v3
   skuhold:
     base-url: https://skuhold.example.com

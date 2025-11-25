@@ -1,42 +1,18 @@
 package com.sephora.sas.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+import lombok.Data;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Data
 public class SkuInfo {
-
-	private boolean isActive;
+	private boolean active;
     private String startDate;
     private String endDate;
-    private boolean isOnHold;
-    private String restrictedCountry;
-    
-    public boolean isActive() {
-		return isActive;
-	}
-	public void setActive(boolean isActive) {
-		this.isActive = isActive;
-	}
-	public String getStartDate() {
-		return startDate;
-	}
-	public void setStartDate(String startDate) {
-		this.startDate = startDate;
-	}
-	public String getEndDate() {
-		return endDate;
-	}
-	public void setEndDate(String endDate) {
-		this.endDate = endDate;
-	}
-	public boolean isOnHold() {
-		return isOnHold;
-	}
-	public void setOnHold(boolean isOnHold) {
-		this.isOnHold = isOnHold;
-	}
-	public String getRestrictedCountry() {
-		return restrictedCountry;
-	}
-	public void setRestrictedCountry(String restrictedCountry) {
-		this.restrictedCountry = restrictedCountry;
-	}
+    private boolean onHold;
+    private String availableCountry;    
+    private Boolean outOfStock;
+    private Boolean addToBasket;
 }
